@@ -13,9 +13,9 @@
 
 <body>
   
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Password Generator</a>
-    </nav>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <span class="navbar-brand mb-0 h1">Password Generator</span>
+      </nav>
 
 <div class="container">
 
@@ -25,20 +25,26 @@
       <div class="content">
         <h4>Generate a Password</h4>
         <br />
-        <input type="text" id=display>
+        <input type="text" id=display placeholder="Your Secure Password">
         <br />
-        <input type="number" min="0" max="50" name="pwLength" id="pwLength">
+        <input type="number" min="0" max="50" name="pwLength" id="pwLength" placeholder="Input desired password length here...">
         <br />
-        <button onclick="generate()">Generate Password</button>
-        <button onclick="">Copy to Clipboard</button>
+        <button class="btn btn-danger btn-lg" onclick="generate()">Generate Password</button>
+        <button class="btn btn-secondary btn-lg float-right" onclick="">Copy to Clipboard</button>
       </div>
 
     </div>
   </div>
 
-    <div class="previousPWs">
-      <h4>Previously Generated Passwords</h4>
+  <div class="row">
+    <div class="col-lg-8 col-sm-12 mx-auto">
+      <div class="previousPWs">
+        <h5>Previously Generated Passwords...</h5>
+      </div>
     </div>
+  </div>
+
+    
 
 
 
