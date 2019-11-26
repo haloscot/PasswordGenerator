@@ -8,13 +8,13 @@
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  
 </head>
 
 <body>
   
     <nav class="navbar navbar-light bg-light justify-content-center">
-        <span class="navbar-brand mb-0 h1">Password Generator</span>
+        <span class="navbar-brand mb-0 h1" id="header">Password Generator</span>
       </nav>
 
 <div class="container">
@@ -40,18 +40,16 @@
     <div class="col-lg-8 col-sm-12 mx-auto">
       <div class="previousPWs">
         <h5>Previously Generated Passwords...</h5>
+        <br />
+        <div id="prevPW"></div> 
       </div>
     </div>
   </div>
 
-    
-
-
-
-  
 
 </div>
 
+<script src="script.js"></script>    
 
 </body>
 </html>
